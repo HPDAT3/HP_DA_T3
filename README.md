@@ -45,6 +45,28 @@
 - For sentinment analysis, we have used finbert, a pre trained model using BERT on finanical text.
 - It gives softmax score of three outputs - positive, negative, nuetral.
 
+
+# Summarization
+
+- We are using pretrained DL model (t5-base) to summarize the forms.
+- Those heading having characters more than>=10000 are being analyzed and summarized.
+- These summaries will be used to do sentiment analysis.
+
+# Sentiment Analysis
+
+- All ML models were run using hugging face's pipeline. (Zero Shot Classification)
+- For sentinment analysis, we have used finbert, a pre trained model using BERT on finanical text.
+- It gives softmax score of three outputs - positive, negative, nuetral.
+- Positive percentage is shown on frontend to show user. 
+
+# SaaS Metrics Analysis Algorithm
+
+- To figure out SaaS metrics from SEC filings, we decided to use the below mentioned algorithm
+- First, we scraped out all the paragraphs from SEC filings which had a numerical value associated in them.
+- Then, these paragraphs were run through a pre-trained machine learning model which would figure out five most relevent words from the paragraph
+- Each of these most relevent words were run through a comprehensive list of SaaS metrics, and if any label matched with any other SaaS Metric, then that paragraph is associated with that particular SaaS metric
+- Then we extract the number out of that paragraph and that number is most likely to be the value of that particular SaaS metric
+
 # References
 
 - https://github.com/jadchaar/sec-cik-mapper
