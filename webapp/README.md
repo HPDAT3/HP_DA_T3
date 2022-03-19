@@ -1,39 +1,34 @@
 # Digital Alpha's SEC Filing Analyzer for SaaS Companies
-
-1) In order to run this, within the root directory make sure to install dependencies by opening the terminal and typing the following
+## Installation
+1) In order to run this, go inside `webapp` directory and install dependencies by opening the terminal and typing the following
 
 ```bash
 npm install
 ```
 
-2) Next we need to install the dependencies within the `client` directory. You can do so by typing the following
+2) Next we need to install the dependencies within the `webapp\client` directory. You can do so by typing the following:
 
 ```bash
 cd client
 npm install
 ```
 
-3) Now all thats left to do is run the start script within the `root` directory and within the `client` directory. 
-4) Use two terminals and type the following commands.
 
-Terminal 1:
+
+## Build
+
+1) Run the start script within the `webapp` directory and within the `webapp\client` directory. Use two terminals and type the following commands.
+
+
+2) In order to run this, go inside `webapp` directory, open a new terminal and type the following:
 
 ```bash
-npm install
 npm start
 ```
 
-Terminal 2:
+3) Next we need to install the run the `webapp\client` directory. You can do so by typing the following:
 
 ```bash
-cd client/
-npm install
+cd client
 npm start
-```
-
-5) Ports -
-
-```
-5000 -> Backend
-3000 -> Frontend (client/)
 ```
