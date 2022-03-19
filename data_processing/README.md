@@ -53,7 +53,7 @@
 - https://huggingface.co/ProsusAI/finbert
 - https://huggingface.co/facebook/bart-large-mnli
 
-# API ka documentation
+# Documentation of API
 
 - Link to the API : https://sec-dataset-downloader.herokuapp.com/create_dataset
 - We were told to make an API to download dataset for any tickers for given forms and range of date.
