@@ -1,7 +1,21 @@
+# Digital Alpha's SEC Filing Analyzer for SaaS Companies
+
+### Sections
+
+1. [Data Processing / ML](#data-processing--ml)
+2. [API](#api-documentation)
+3. [Web App](#web-app-documentation)
+
 
 ## Note
 
 - The code was tested on an Ubuntu 20.04 LTS machine running Python 3.8.10.
+
+---
+
+# Data Processing / ML
+
+---
 
 # Setting Up the Python Env
 
@@ -25,26 +39,11 @@
 
 - For parsing the forms, we have used regular expressions to extract each section's text in form of paragraphs and corresponding tables in that section. They are stored in a JSON format and accessed as such.
 
-# Summarization
+# ML
 
-- We are using pretrained DL model (t5-base) to summarize the forms.
-- Those heading having characters more than>=10000 are being analyzed and summarized.
-- These summaries will be used to do sentiment analysis.
-
-# Sentiment Analysis
-
-- All ML models were run using hugging face's pipeline. (Zero Shot Classification)
+- All ML models were run using hugging face's pipeline.
 - For sentinment analysis, we have used finbert, a pre trained model using BERT on finanical text.
 - It gives softmax score of three outputs - positive, negative, nuetral.
-- Positive percentage is shown on frontend to show user. 
-
-# SaaS Metrics Analysis Algorithm [Incomplete]
-
-- To figure out SaaS metrics from SEC filings, we decided to use the below mentioned algorithm
-- First, we scraped out all the paragraphs from SEC filings which had a numerical value associated in them.
-- Then, these paragraphs were run through a pre-trained machine learning model which would figure out five most relevent words from the paragraph
-- Each of these most relevent words were run through a comprehensive list of SaaS metrics, and if any label matched with any other SaaS Metric, then that paragraph is associated with that particular SaaS metric
-- Then we extract the number out of that paragraph and that number is most likely to be the value of that particular SaaS metric
 
 # References
 
@@ -56,7 +55,11 @@
 - https://huggingface.co/ProsusAI/finbert
 - https://huggingface.co/facebook/bart-large-mnli
 
-# Documentation of API
+---
+
+# API Documentation
+
+---
 
 - Link to the API : https://sec-dataset-downloader.herokuapp.com/create_dataset
 - We were told to make an API to download dataset for any tickers for given forms and range of date.
@@ -90,3 +93,47 @@ curl --location --request POST 'https://sec-dataset-downloader.herokuapp.com/cre
 ```
 
 - **NOTE** : Downloading the dataset takes lot of space in backend, which might be too big for heroku. Kindly run on local system as it might be downloading GBs of data for processing depending on the time range, no of companies and no of filings.
+
+---
+
+# Web App Documentation
+
+--- 
+
+1) In order to run this, within the root directory make sure to install dependencies by opening the terminal and typing the following
+
+```bash
+npm install
+```
+
+2) Next we need to install the dependencies within the `client` directory. You can do so by typing the following
+
+```bash
+cd client
+npm install
+```
+
+3) Now all thats left to do is run the start script within the `root` directory and within the `client` directory. 
+4) Use two terminals and type the following commands.
+
+Terminal 1:
+
+```bash
+npm install
+npm start
+```
+
+Terminal 2:
+
+```bash
+cd client/
+npm install
+npm start
+```
+
+5) Ports -
+
+```
+5000 -> Backend
+3000 -> Frontend (client/)
+```
