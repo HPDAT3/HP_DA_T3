@@ -32,3 +32,6 @@ npm start
 cd client
 npm start
 ```
+![image](https://user-images.githubusercontent.com/101931194/159132711-24967a04-f0e8-4ab5-844e-2460612066e2.png)
+![image](https://user-images.githubusercontent.com/101931194/159132719-37d31fa6-4eef-4e0c-81b6-f991bed57388.png)
+![image](https://user-images.githubusercontent.com/101931194/159132728-390d509e-5065-4899-aaa9-1ef3e8eccc1d.png)
