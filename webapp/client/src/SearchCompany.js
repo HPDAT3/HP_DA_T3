@@ -41,7 +41,7 @@ export default () => {
         <Select
         options={companies}
         onChange={onChange}
-        placeholder="Please Select a Company"
+        placeholder="Search for a company here"
         noOptionsMessage={() => "No such Company available"}
         theme={(theme) => ({
             ...theme,

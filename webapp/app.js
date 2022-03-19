@@ -11,13 +11,14 @@ app.use(cors());
 
 let mongoUrl_digialpha = process.env["MONGO_URL"];
 // mongoUrl_digialpha+="/DigiAlpha"
-console.log("Mongo Url using",mongoUrl_digialpha);
 
 if (!mongoUrl_digialpha) {
   // No mongourl is defined, use default database
-  mongoUrl_digialpha = "mongodb://localhost:27017/mernauth/Digialpha";
-
+  mongoUrl_digialpha = "mongodb+srv://Piyush:ginniferpep123@cluster0.ewfh1.mongodb.net/SaaS_Metrics";
 }
+
+console.log("Mongo Url using",mongoUrl_digialpha);
+
 const companyRouter = require("./routes/Company");
 app.use("/company", companyRouter);
 const formRouter = require("./routes/Form");

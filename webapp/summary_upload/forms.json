@@ -1,39 +1,46 @@
 [
     {
-        "_id":"623594eda8d8d757c43648f2",
-        "name":"10K Form 2021",
-        "type":"10K",
-        "paras": [
-            {
-                "heading" : "",
-                "content" : "",
-                "Sentiment" : 60
-            }
-        ],
-        "cik" : "0001353499"
-    },
-    {
         "_id":"623594eda8d5d757c43648f2",
         "name":"10K Form 2020",
         "type":"10K",
         "paras": [
             {
-                "heading" : "",
-                "content" : "",
-                "Sentiment" : 80
+                "heading": "Risk Factors",
+                "content": "the company has signed a 10-year exclusive licensing agreement with Qualcomm . the agreement will allow the company to use the MAX-D technology in a variety of applications . it will also be used in the development of the company's own mobile app .",
+                "sentiment": 0.8514181971549988
+            },
+            {
+                "heading": "Quantitative and Qualitative Disclosures About Market Risk",
+                "content": "a number of forward-looking statements reflect our views with respect to future events and financial condition . the company believes that Max Sound HD Audio Technology is a game changer for several vertical markets . a recent accounting pronouncement deemed either immaterial or not applicable .",
+                "sentiment": 0.05347144603729248
+            },
+            {
+                "heading": "Changes in and Disagreements with Accountants on Accounting and Financial Disclosure",
+                "content": "the company has accumulated losses and a working capital deficit of $12,652,995 . the ultimate impact of the COVID-19 pandemic is unknown and cannot be predicted with confidence . if the company is unable to obtain additional funds, it may not be able to continue operations .",
+                "sentiment": 0.009922540746629238
             }
         ],
         "cik" : "0001353499"
     },
     {
         "_id":"623594zda8d8d757c43648f2",
-        "name":"10K Form 2019",
+        "name":"10K Form 2021",
         "type":"10K",
         "paras": [
             {
-                "heading" : "",
-                "content" : "",
-                "Sentiment" : 90
+                "heading": "Risk Factors",
+                "content": "the company has signed a 10-year exclusive licensing agreement with Qualcomm . the agreement will allow the company to use the MAX-D technology in a variety of applications . it will also be used in the development of the company's own mobile app .",
+                "sentiment": 0.8514181971549988
+            },
+            {
+                "heading": "Quantitative and Qualitative Disclosures About Market Risk",
+                "content": "a number of forward-looking statements reflect our views with respect to future events and financial condition . the company believes that Max Sound HD Audio Technology is a game changer for several vertical markets . a recent accounting pronouncement deemed either immaterial or not applicable .",
+                "sentiment": 0.05347144603729248
+            },
+            {
+                "heading": "Changes in and Disagreements with Accountants on Accounting and Financial Disclosure",
+                "content": "the company has accumulated losses and a working capital deficit of $12,652,995 . the ultimate impact of the COVID-19 pandemic is unknown and cannot be predicted with confidence . if the company is unable to obtain additional funds, it may not be able to continue operations .",
+                "sentiment": 0.009922540746629238
             }
         ],
         "cik" : "0001353499"

@@ -13,6 +13,8 @@ import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-6
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SentimentIcon } from "feather-icons/dist/icons/bar-chart-2.svg";
 import CompanyService from "Services/CompanyService";
+import BalanceSheet from "./BalanceSheet";
+import Metrics from "./Metrics";
 
 import Header from "../headers/light.js";
 import ShowForm from "./ShowForm.js";
@@ -191,7 +193,7 @@ export default ({
 
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
-  const tabContent = [<ShowForm formsArray={formsArray} formsNameArray={formsNameArray} />, "TODO: Balance Sheet", "TODO: Key Metrics"]
+  const tabContent = [<ShowForm formsArray={formsArray} formsNameArray={formsNameArray} />, <BalanceSheet />, <Metrics />]
   return (
     <MainContainer>
       <Header roundedHeaderButton={true} />
