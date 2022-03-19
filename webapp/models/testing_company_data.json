@@ -1,0 +1,21 @@
+[
+    {
+        "cik": "88927487", 
+        "name": "Adobe", 
+        "desc": "Description", 
+        "forms": [
+            {
+                "name" : "Adobe", 
+                "formType" : "10-K", 
+                "paras" : [
+                    {
+                        "heading" : "heading", 
+                        "content" : "content", 
+                        "sentiment":"sentiment"
+                    }
+                ]
+            }
+        ]
+    }
+]
+

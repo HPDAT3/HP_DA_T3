@@ -1,0 +1,41 @@
+[
+    {
+        "_id":"623594eda8d8d757c43648f2",
+        "name":"10K Form 2021",
+        "type":"10K",
+        "paras": [
+            {
+                "heading" : "",
+                "content" : "",
+                "Sentiment" : 60
+            }
+        ],
+        "cik" : "0001353499"
+    },
+    {
+        "_id":"623594eda8d5d757c43648f2",
+        "name":"10K Form 2020",
+        "type":"10K",
+        "paras": [
+            {
+                "heading" : "",
+                "content" : "",
+                "Sentiment" : 80
+            }
+        ],
+        "cik" : "0001353499"
+    },
+    {
+        "_id":"623594zda8d8d757c43648f2",
+        "name":"10K Form 2019",
+        "type":"10K",
+        "paras": [
+            {
+                "heading" : "",
+                "content" : "",
+                "Sentiment" : 90
+            }
+        ],
+        "cik" : "0001353499"
+    }
+]
