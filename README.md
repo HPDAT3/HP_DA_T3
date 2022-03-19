@@ -1,5 +1,11 @@
 # Digital Alpha's SEC Filing Analyzer for SaaS Companies
 
+### Sections
+
+1. [Data Processing / ML](https://github.com/HPDAT3/HP_DA_T3/edit/master/README.md#data-processing--ml)
+2. [API](https://github.com/HPDAT3/HP_DA_T3/edit/master/README.md#api-documentation)
+3. [Web App](https://github.com/HPDAT3/HP_DA_T3/edit/master/README.md#web-app-documentation)
+
 
 ## Note
 
